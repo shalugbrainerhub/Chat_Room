@@ -9,5 +9,7 @@ urlpatterns=[
     path('delete_room/<str:pk>', views.delete_room, name='delete_room'),
     path('login', views.loginPage, name='login'),
     path('logout', views.logoutPage, name='logout'),
-    path('register', views.registerPage, name='register')
+    path('register', views.registerPage, name='register'),
+    path('delete_message/<str:pk>', views.delete_message, name='delete_message'),
+    path('profile/<str:pk>', views.userProfile, name='profile')
 ]
